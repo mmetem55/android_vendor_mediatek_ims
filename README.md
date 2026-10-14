@@ -1,7 +1,11 @@
 # Mediatek IMS
 
-* This repository provides a prebuilt IMS (IP Multimedia Subsystem) package for Mediatek devices, rebuilt and adapted to work seamlessly with **AOSP 16** and newer.
+* This repository provides a prebuilt IMS (IP Multimedia Subsystem) package for Mediatek devices, rebuilt and adapted to work seamlessly with **AOSP 17** and newer.
 * The aim is to eliminate the dependency on scattered Mediatek ELF blobs and tightly-coupled proprietary components that frequently break with each AOSP release.
+
+## Changes Made
+
+* Fixed the IMS crash on Android 17 by adding a TelephonyMetrics shim to ImsService.apk, restoring VoLTE, calls and SMS.
 
 ## ✨ Features
 
